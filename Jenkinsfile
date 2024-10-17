@@ -16,13 +16,13 @@ pipeline {
         stage('Push to artifact'){
             steps {
                 // Push the artifact to Nexus repository
-               // sh 'mvn deploy'
+               sh 'mvn deploy'
             }
         }
         stage('Create a Docker Image'){
             steps {
                 // Creating Docker image
-               // sh 'docker build -t e-com:snapshot .'
+               sh 'docker build -t e-com:snapshot .'
             }
         }
     } 
