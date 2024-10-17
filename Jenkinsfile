@@ -4,7 +4,7 @@ Pipeline {
         stage('Checkout'){
             steps {
                 // Simple git checkout
-                git branch: 'dev', url: 'https://github.com/mayurghule494/E-shopping-cart.git'
+                git branch: 'main', url: 'https://github.com/mayurghule494/E-shopping-cart.git'
             }
         }
         stage('Build'){
